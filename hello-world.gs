@@ -1,3 +1,3 @@
-function myFunction() {
+function helloWorld() {
   Browser.msgBox("Hello World!");
 }
