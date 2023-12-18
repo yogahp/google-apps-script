@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+</head>
+<script>
+ function displayToast() {
+   var name = document.getElementById('name').value;
+   google.script.run.displayToast(name);
+ }
+</script>
+<body>
+  What is your name?
+  <input type="text" id="name">
+  <br>
+  <input type="button" class="button" value="Display toast" onclick="displayToast();">
+</body>
+</html>
