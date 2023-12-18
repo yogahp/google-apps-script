@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <base target="_top">
+   <script>
+     function submitForm() {
+       google.script.run.appendRowFromFormSubmit(document.getElementById("employeeForm"));
+     }
+   </script>
+ </head>
+ <body>
+   <h1>Enter employee details</h1>
+   <form id="employeeForm">
+     <label for="firstName">First name</label>
+     <input type="text" id="firstName" name="firstName"><br><br>
+     <label for="lastName">Last name</label>
+     <input type="text" id="lastName" name="lastName"><br><br>
+     <div>
+       <label for="department">Department:</label><br>
+       <input type="radio" id="sales" name="department" value="Sales">
+       <label for="sales">Sales</label><br>
+       <input type="radio" id="marketing" name="department" value="Marketing">
+       <label for="marketing">Marketing</label><br>
+       <input type="radio" id="product" name="department" value="Product">
+       <label for="product">Product</label><br>
+       <input type="radio" id="engineering" name="department" value="Engineering">
+       <label for="engineering">Engineering</label><br><br>
+       <input type="button" value="Submit" onclick="submitForm();">
+   </form>
+ </body>
+</html>
